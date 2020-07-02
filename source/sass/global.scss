@@ -1,0 +1,42 @@
+:root {
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+body {
+    min-width: 320px;
+    max-width: 1366px;
+    margin: 0 auto;
+    color: $black;
+
+    font-family: 'Montserrat', sans-serif, 'PT Sans';
+    font-weight: normal;
+    font-size: 0.937rem;
+    line-height: 1.72;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+
+}
+
+a:hover,
+button:hover {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+

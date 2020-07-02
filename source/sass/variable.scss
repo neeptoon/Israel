@@ -1,0 +1,40 @@
+/* Vars:
+   ========================================================================== */
+
+// Main color
+$black: #484848;
+$gray: #e3e3e3;
+$white: #ffffff;
+$blue: #1fc0fc;
+$lighten-blue: #63d3fd;
+$darken-yellow: #ffc341;
+$yellow: #ffd701;
+$red: #ff0000;
+
+
+
+//  text-color
+$text-color-first: $black;
+$text-color-second: $blue;
+$text-color-third: $white;
+$text-color-fourth: $darken-yellow;
+
+// border-color
+$border-color-default: $gray;
+$border-color-correct: $black;
+$border-color-error: $red;
+
+// sizes
+$desktopWidth: 1024px;
+$tabletWidth: 768px;
+$phoneWidth: 320px;
+
+//paddings
+$mobilePadding: 20px;
+$tabletPadding: 30px;
+$desktopPadding: 100px;
+
+
+// retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
