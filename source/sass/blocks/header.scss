@@ -1,0 +1,28 @@
+.header {
+    position: absolute;
+    display: grid;
+    width: 100%;
+    padding: 30px $desktopPadding 5px;
+
+    font-family: serif;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.header__logo {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: center;
+
+}
+
+.header__order {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    justify-self: end;
+}
+
+.header__phone {
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+}

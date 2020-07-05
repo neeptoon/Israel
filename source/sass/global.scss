@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
     color: $black;
 
-    font-family: 'Montserrat', sans-serif, 'PT Sans';
+    font-family: 'Fira', sans-serif, 'PT Sans';
     font-weight: normal;
     font-size: 0.937rem;
     line-height: 1.72;
@@ -31,6 +31,11 @@ a {
 a:hover,
 button:hover {
     cursor: pointer;
+}
+
+a:focus,
+button:focus {
+    outline: none;
 }
 
 img {
