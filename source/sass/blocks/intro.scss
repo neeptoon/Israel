@@ -37,6 +37,8 @@
 .intro div {
     position: relative;
     z-index: -2;
+    display: flex;
+    justify-content: center;
     width: 100%;
     min-height: 200px;
     margin-bottom: 115px;
@@ -47,7 +49,7 @@
 
 .intro p {
     position: relative;
-    width: 345px;
+    width: 343px;
     margin: 0;
     color: $white;
     font-weight: 500;
@@ -55,14 +57,25 @@
     line-height: 1.2;
     text-align: center;
 
+    &:before {
+        position: absolute;
+        top: 5px;
+        left: 36%;
+        width: 1px;
+        height: 50px;
+        background-color: #ffffff;
+        content: "";
+
+    }
+
     &:after {
+        content: url("../img/mouse.svg");
         position: absolute;
         top: 74px;
         left: 36%;
         z-index: 5;
         width: 54px;
         height: 54px;
-        content: url("../img/mouse.svg");
     }
 }
 
