@@ -19,4 +19,12 @@
         border-bottom: 2px dashed $black;
         content: '';
     }
+
+    @media (max-width: $tabletWidth) {
+        font-size: 0.875rem;
+
+        &:after {
+            bottom: 0;
+        }
+    }
 }

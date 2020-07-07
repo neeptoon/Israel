@@ -3,48 +3,64 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 225px;
+    padding-top: 155px;
     padding-bottom: 335px;
+    overflow-x: hidden;
     background-repeat: no-repeat;
     background-position: center;
-    mask-image: url('../img/mask-main.png');
+    mask-image: url("../img/mask-main.png");
+    mask-size: cover;
+    mask-position: center;
 
     &:before {
-        content: url("../img/main-bg-desktop.png");
         position: absolute;
         top: 0;
         right: 0;
         z-index: -2;
+        content: url("../img/main-bg-desktop.png");
     }
 
     &:after {
-        content: url('../img/photo_girl-desktop.png');
         position: absolute;
         top: 155px;
         z-index: -1;
+        content: url("../img/photo_girl-desktop.png");
+    }
+
+    @media (max-width: $tabletWidth) {
+        &:before {
+            content: url("../img/main-bg-mobile.png");
+        }
+
+        &:after {
+            content: url("../img/photo_girl-mobile.png");
+        }
     }
 }
 
-.intro clippath {
-    font-family: 'Raleway',sans-serif, 'PT Sans';
-    font-weight: 900;
-    font-size: 200px;
-    line-height: 1.7;
-    letter-spacing: 11px;
-    text-transform: uppercase;
-}
-
-.intro div {
+.intro span {
     position: relative;
     z-index: -2;
     display: flex;
     justify-content: center;
-    width: 100%;
-    min-height: 200px;
-    margin-bottom: 115px;
-    background-image: url("../img/Pic_overlay-desktop.png");
+    padding-bottom: 45px;
+    color: transparent;
+    font-family: 'Raleway',sans-serif, 'PT Sans';
+    font-weight: 900;
+    font-size: 12.5rem;
+    line-height: 1.7;
+    letter-spacing: 11px;
+    text-transform: uppercase;
+    background: url("../img/Pic_overlay-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 1754px 280px;
     background-size: cover;
-    clip-path: url(#clipping-text);
+    background-clip: text;
+
+    @media (max-width: $tabletWidth) {
+        font-size: 4.5rem;
+        letter-spacing: 1%;
+    }
 }
 
 .intro p {
@@ -59,8 +75,8 @@
 
     &:before {
         position: absolute;
-        top: 5px;
-        left: 36%;
+        top: 159px;
+        left: 51%;
         width: 1px;
         height: 50px;
         background-color: #ffffff;
@@ -76,6 +92,10 @@
         z-index: 5;
         width: 54px;
         height: 54px;
+    }
+
+    @media (max-width: $tabletWidth) {
+        font-size: 1.25rem;
     }
 }
 
