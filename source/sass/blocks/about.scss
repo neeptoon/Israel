@@ -42,10 +42,22 @@
 
 .about div {
     position: relative;
-    // mask-image: url("../img/mask-program.png");
-    // mask-size: 100%;
-    // mask-position: center;
-    // mask-repeat: no-repeat;
+    @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.about img {
+    mask-image: url("../img/mask-program.png");
+    mask-size: 100%;
+    mask-position: center;
+    mask-repeat: no-repeat;
+
+    @media (max-width: 870px) {
+        mask-size: 110% 100%;
+
+    }
 }
 
 .about button {
@@ -60,6 +72,7 @@
 
 
     &:after {
+        content: "";
         position: absolute;
         top: -22px;
         left: -21px;
@@ -68,10 +81,17 @@
         height: 64px;
         background-color: $white;
         border-radius: 50%;
-        content: "";
+
+        @media (max-width: 768px) {
+            top: -15px;
+            left: -15px;
+            width: 53px;
+            height: 53px;
+        }
     }
 
     &:before {
+        content: "";
         position: absolute;
         top: -38px;
         left: -37px;
@@ -81,7 +101,13 @@
         background-color: $white;
         border-radius: 50%;
         opacity: 0.5;
-        content: "";
+
+        @media (max-width: 768px) {
+            top: -29px;
+            left: -28px;
+            width: 80px;
+            height: 80px;
+        }
     }
 
     &:hover,

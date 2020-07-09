@@ -1,5 +1,5 @@
 const special = {
-  properties: ['all']
+  properties: ['content']
 };
 
 const positioning = {

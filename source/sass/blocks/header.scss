@@ -1,5 +1,6 @@
 .header {
     position: absolute;
+    z-index: 3;
     display: grid;
     width: 100%;
     max-width: 1366px;
@@ -9,8 +10,8 @@
     grid-template-columns: repeat(3, 1fr);
 
     @media (max-width: $tabletWidth) {
-        grid-template-columns: repeat(2, 1fr);
         padding: 20px $mobilePadding 5px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
 
