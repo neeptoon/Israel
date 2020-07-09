@@ -1,0 +1,102 @@
+.about {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    background-image: url("../img/about-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 0 166px;
+    background-size: contain;
+
+}
+
+.about h2 {
+    margin: 0 0 20px;
+    color: $blue;
+    font-family: "Montserrat", sans-serif, "PT Sans";
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+
+    @media (max-width: $tabletWidth) {
+        font-size: 2rem;
+    }
+}
+
+.about p {
+    width: 51%;
+    margin: 0 0 45px;
+    font-family: "Fira", sans-serif, "PT Sans";
+    font-size: 1.0625rem;
+    text-align: center;
+
+    @media (max-width: $tabletWidth) {
+        align-self: flex-start;
+        width: 100%;
+        max-width: 480px;
+        padding: 0 $tabletPadding;
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+
+.about div {
+    position: relative;
+    // mask-image: url("../img/mask-program.png");
+    // mask-size: 100%;
+    // mask-position: center;
+    // mask-repeat: no-repeat;
+}
+
+.about button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    padding: none;
+    color: $blue;
+    background-color: transparent;
+    border: none;
+
+
+    &:after {
+        position: absolute;
+        top: -22px;
+        left: -21px;
+        z-index: -1;
+        width: 64px;
+        height: 64px;
+        background-color: $white;
+        border-radius: 50%;
+        content: "";
+    }
+
+    &:before {
+        position: absolute;
+        top: -38px;
+        left: -37px;
+        z-index: -1;
+        width: 96px;
+        height: 96px;
+        background-color: $white;
+        border-radius: 50%;
+        opacity: 0.5;
+        content: "";
+    }
+
+    &:hover,
+    &:focus {
+        color: $lighten-blue;
+
+        &:after {
+            box-shadow: 0 2px rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    &:active {
+        color: $blue;
+    }
+}
+
+
+

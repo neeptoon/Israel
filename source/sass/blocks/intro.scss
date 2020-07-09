@@ -3,15 +3,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 155px;
-    padding-bottom: 335px;
-    overflow-x: hidden;
-    background-repeat: no-repeat;
-    background-position: center;
-    mask-image: url("../img/mask-main.png");
-    mask-size: 1366px;
-    mask-position: center;
-    mask-repeat: no-repeat;
+    padding-top: 252px;
+    padding-bottom: 290px;
+    overflow: hidden;
 
     &:before {
         position: absolute;
@@ -21,12 +15,28 @@
         width: 100%;
         height: 906px;
         background-image: url("../img/main-bg-desktop.png");
-        background-position: center;
-        background-size: 1366px 906px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 1366px 880px;
         content: "";
 
-        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-            background-image: url("../img/main-bg-desktop@2x.png")
+
+        @media (min-resolution: $retina-dpi),
+            (min-resolution: $retina-dppx) {
+            background-image: url("../img/main-bg-desktop@2x.png");
+        }
+
+        @media (max-width: 460px) {
+            width: 460px;
+            height: 535px;
+            background-image: url("../img/main-bg-mobile.png");
+
+            background-size: 460px 535px;
+
+            @media (min-resolution: $retina-dpi),
+                (min-resolution: $retina-dppx) {
+                background-image: url("../img/main-bg-mobile@2x.png")
+            }
         }
     }
 
@@ -40,31 +50,67 @@
         background-image: url("../img/photo_girl-desktop.png");
         background-position: center;
         background-size: contain;
+        mask-image: url("../img/mask-main.png");
+        mask-size: 1366px;
+        mask-position: center;
+        mask-repeat: no-repeat;
 
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
             background-image: url("../img/photo_girl-desktop@2x.png")
         }
 
+        @media (max-width: 460px) {
+            width: 240px;
+            height: 383px;
+            background-image: url("../img/photo_girl-mobile.png");
+            mask-size: 830px;
+            mask-position: center;
+
+            @media (min-resolution: $retina-dpi),
+                (min-resolution: $retina-dppx) {
+                background-image: url("../img/photo_girl-mobile@2x.png")
+            }
+        }
+    }
+
+    @media (max-width: 460px) {
+        padding-top: 200px;
+        padding-bottom: 240px;
     }
 }
 
 .intro span {
     position: relative;
     z-index: -2;
-    display: block;
-    padding-bottom: 2%;
-    color: transparent;
-    font-family: 'Raleway',sans-serif, 'PT Sans';
+    margin-bottom: 130px;
+    color: rgba(0, 0, 0, 0);
+    font-family: 'Raleway',sans-serif,'PT Sans';
     font-weight: 900;
     font-size: calc(9.5em + 4vw);
-    line-height: 1.8;
-    letter-spacing: 1rem;
+    line-height: 0.8;
+    letter-spacing: 0.8rem;
     text-transform: uppercase;
-    background-image: url("../img/Pic_overlay-desktop.png");
-    background-repeat: no-repeat;
-    background-position: 1px 92px;
-    background-size: contain;
+    background-image: url(../img/Pic_overlay-desktop.png);
+    background-position: 0 0;
+    background-size: cover;
+    -webkit-background-clip: text;
     background-clip: text;
+
+    @media (max-width: $tabletWidth) {
+        font-size: calc(8em + 4vw);
+        letter-spacing: 0.3rem;
+    }
+
+    @media (max-width: 600px) {
+        font-size: calc(6em + 4vw);
+        letter-spacing: 0.2rem;
+    }
+
+    @media (max-width: 460px) {
+        margin-bottom: 76px;
+        font-size: calc(4em + 4vw);
+        letter-spacing: 0.1rem;
+    }
 }
 
 .intro p {
@@ -82,10 +128,9 @@
         top: 159px;
         left: 51%;
         width: 1px;
-        height: 50px;
+        height: 130px;
         background-color: #ffffff;
         content: "";
-
     }
 
     &:after {
@@ -96,6 +141,13 @@
         z-index: 5;
         width: 54px;
         height: 54px;
+    }
+
+    @media (max-width: $tabletWidth) {
+        width: 90%;
+        max-width: 320px;
+        font-size: 1.25rem;
+
     }
 }
 
