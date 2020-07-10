@@ -1,0 +1,106 @@
+.tabs {
+    display: grid;
+    padding-top: 33px;
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: 7%;
+}
+
+.tabs h3 {
+    margin: 0 0 20px;
+    color: $blue;
+    font-size: 1.75rem;
+    letter-spacing: 0.1em;
+}
+
+.tabs p {
+    width: 85%;
+    margin: 0;
+
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+.tabs ul {
+    margin: 0;
+    padding: 0;
+    font-family: "Fira", sans-serif, "PT Sans";
+    font-size: 0.9375rem;
+    list-style: none;
+}
+
+
+.tabs li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.tabs section {
+    padding-top: 10px;
+}
+
+// стили для панели с вкладками
+[role="tablist"] li,
+[role="tablist"] a {
+    display: flex;
+}
+
+// стили для вкладок
+[role="tablist"] a {
+    position: relative;
+    width: 228px;
+    margin: 0;
+    padding: 20px 41px 20px 72px;
+    font-weight: normal;
+}
+
+// стили для активной вкладки
+[role="tablist"] [aria-selected] {
+    color: $white;
+    text-transform: uppercase;
+    background-image: linear-gradient(-49deg, $white 10%, transparent 10%),linear-gradient(-131deg, $white 10%, transparent 10%),linear-gradient(154.39deg, $darken-yellow 20.46%, $yellow 65.31%);
+
+    &:focus {
+        outline: none;
+    }
+}
+
+// [role="tabpanel"] {
+//     padding: 1.5rem;
+//     border: 2px solid;
+// }
+
+// [role="tabpanel"] * + * {
+//     margin-top: 0.75rem;
+// }
+
+
+@media (max-width: 550px) {
+
+    [role="tablist"] li, [role="tablist"] a {
+        position: static;
+        display: block;
+    }
+
+    // [role="tablist"] a {
+    //     border: 2px solid #222 !important;
+    // }
+
+    // [role="tablist"] li + li a {
+    //     border-top: 0 !important;
+    // }
+
+    [role="tablist"] [aria-selected] {
+        position: static;
+    }
+
+    [role="tablist"] [aria-selected]::after {
+        content: '\0020⬅';
+    }
+
+    [role="tabpanel"] {
+        border-top: 0;
+    }
+}
+

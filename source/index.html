@@ -43,7 +43,7 @@
     <h1 class="visually-hidden">Организация стажировки студентов в Израиле</h1>
 
     <section class="intro">
-      <h2 class="visually-hidden"></h2>
+      <h2 class="visually-hidden">Стижировка студентов в Израиле</h2>
 
       <span>Израиль</span>
 
@@ -52,7 +52,7 @@
     </section>
 
     <section class="about">
-      <h2>О программе</h2>
+      <h2 class="heading">О программе</h2>
 
       <p>«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60
         на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до 8400$.
@@ -82,15 +82,177 @@
           </svg>
         </button>
       </div>
+    </section>
 
+    <section class="programms">
+      <h2 class="heading">Программы</h2>
 
+      <div class="tabs">
+        <ul class="list">
+          <li>
+            <a href="#section1">Общие</a>
+          </li>
+          <li>
+            <a href="#section2">Академические</a>
+          </li>
+          <li>
+            <a href="#section3">Стажировки</a>
+          </li>
+          <li>
+            <a href="#section4">Волонтёрство</a>
+          </li>
+          <li>
+            <a href="#section5">Религиозные</a>
+          </li>
+        </ul>
 
-
+        <section id="section1">
+          <h3>Общие</h3>
+          <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни
+            —
+            вот что
+            такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
+            живая
+            лаборатория идей и творческого исследования.</p>
+          <p>
+            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+            законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+            изучить все это в удивительной университетской среде.</p>
+        </section>
+        <section id="section2">
+          <h3>Академические</h3>
+          <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни
+            —
+            вот что
+            такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
+            живая
+            лаборатория идей и творческого исследования.</p>
+          <p>
+            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+            законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+            изучить все это в удивительной университетской среде.</p>
+        </section>
+        <section id="section3">
+          <h3>Стажировки</h3>
+          <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни
+            —
+            вот что
+            такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
+            живая
+            лаборатория идей и творческого исследования.</p>
+          <p>
+            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+            законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+            изучить все это в удивительной университетской среде.</p>
+        </section>
+        <section id="section4">
+          <h3>Волонтёрство</h3>
+          <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни
+            —
+            вот что
+            такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
+            живая
+            лаборатория идей и творческого исследования.</p>
+          <p>
+            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+            законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+            изучить все это в удивительной университетской среде.</p>
+        </section>
+        <section id="section5">
+          <h3>Религиозные</h3>
+          <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни
+            —
+            вот что
+            такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
+            живая
+            лаборатория идей и творческого исследования.</p>
+          <p>
+            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+            законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+            изучить все это в удивительной университетской среде.</p>
+        </section>
+      </div>
 
     </section>
 
 
   </main>
+
+  <script>
+    (function () {
+      // Get relevant elements and collections
+      const tabbed = document.querySelector('.programms');
+      const tablist = tabbed.querySelector('ul');
+      const tabs = tablist.querySelectorAll('a');
+      const panels = tabbed.querySelectorAll('[id^="section"]');
+
+      // The tab switching function
+      const switchTab = (oldTab, newTab) => {
+        newTab.focus();
+        // Make the active tab focusable by the user (Tab key)
+        newTab.removeAttribute('tabindex');
+        // Set the selected state
+        newTab.setAttribute('aria-selected', 'true');
+        oldTab.removeAttribute('aria-selected');
+        oldTab.setAttribute('tabindex', '-1');
+        // Get the indices of the new and old tabs to find the correct
+        // tab panels to show and hide
+        let index = Array.prototype.indexOf.call(tabs, newTab);
+        let oldIndex = Array.prototype.indexOf.call(tabs, oldTab);
+        panels[oldIndex].hidden = true;
+        panels[index].hidden = false;
+      }
+
+      // Add the tablist role to the first <ul> in the .tabbed container
+      tablist.setAttribute('role', 'tablist');
+
+      // Add semantics are remove user focusability for each tab
+      Array.prototype.forEach.call(tabs, (tab, i) => {
+        tab.setAttribute('role', 'tab');
+        tab.setAttribute('id', 'tab' + (i + 1));
+        tab.setAttribute('tabindex', '-1');
+        tab.parentNode.setAttribute('role', 'presentation');
+
+        // Handle clicking of tabs for mouse users
+        tab.addEventListener('click', e => {
+          e.preventDefault();
+          let currentTab = tablist.querySelector('[aria-selected]');
+          if (e.currentTarget !== currentTab) {
+            switchTab(currentTab, e.currentTarget);
+          }
+        });
+
+        // Handle keydown events for keyboard users
+        tab.addEventListener('keydown', e => {
+          // Get the index of the current tab in the tabs node list
+          let index = Array.prototype.indexOf.call(tabs, e.currentTarget);
+          // Work out which key the user is pressing and
+          // Calculate the new tab's index where appropriate
+          let dir = e.which === 38 ? index - 1 : e.which === 40 ? index + 1 : e.which === 39 ? 'right' : null;
+          if (dir !== null) {
+            e.preventDefault();
+            // If the down key is pressed, move focus to the open panel,
+            // otherwise switch to the adjacent tab
+            dir === 'right' ? panels[i].focus() : tabs[dir] ? switchTab(e.currentTarget, tabs[dir]) : void 0;
+          }
+        });
+      });
+
+      // Add tab panel semantics and hide them all
+      Array.prototype.forEach.call(panels, (panel, i) => {
+        panel.setAttribute('role', 'tabpanel');
+        panel.setAttribute('tabindex', '-1');
+        let id = panel.getAttribute('id');
+        panel.setAttribute('aria-labelledby', tabs[i].id);
+        panel.hidden = true;
+      });
+
+      // Initially activate the first tab and reveal the first tab panel
+      tabs[0].removeAttribute('tabindex');
+      tabs[0].setAttribute('aria-selected', 'true');
+      panels[0].hidden = false;
+    })();
+  </script>
 </body>
 
 </html>

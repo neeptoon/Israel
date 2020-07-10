@@ -1,0 +1,12 @@
+.heading {
+    margin: 0 0 24px;
+    color: $blue;
+    font-family: "Montserrat", sans-serif, "PT Sans";
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+
+    @media (max-width: $tabletWidth) {
+        font-size: 2rem;
+    }
+}
