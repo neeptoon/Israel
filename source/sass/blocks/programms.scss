@@ -1,7 +1,21 @@
 .programms {
-    padding: 115px $padding-l;
+    padding: 115px 15%;
     background-image: url("../img/programs-bg-desktop.png");
     background-repeat: no-repeat;
     background-position: right 93px;
     background-size: 680px 426px;
+
+    @media (max-width: 870px) {
+        padding: 5px $mobilePadding;
+        background-image: url("../img/programs-bg-mobile.png");
+        background-position: right 128px;
+        background-size: 320px 201px;
+    }
+}
+
+.programms h2 {
+    @media (max-width: 870px) {
+        width: max-content;
+        margin: 0 auto;
+    }
 }

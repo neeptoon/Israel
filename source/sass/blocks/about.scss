@@ -8,6 +8,10 @@
     background-position: 0 166px;
     background-size: contain;
 
+    @media (max-width: 870px) {
+        padding-bottom: 60px;
+    }
+
 }
 
 .about p {
@@ -43,7 +47,6 @@
 
     @media (max-width: 870px) {
         mask-size: 110% 100%;
-
     }
 }
 
