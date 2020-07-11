@@ -1,7 +1,7 @@
 .tabs {
     display: grid;
     padding-top: 33px;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: 235px 1fr;
     grid-column-gap: 7%;
 
     @media (max-width: 870px) {
@@ -41,10 +41,13 @@
 
 
 .tabs ul {
+    display: grid;
+    grid-auto-rows: 70px;
+    align-items: center;
     margin: 0;
     padding: 0;
-    font-family: "Fira", sans-serif, "PT Sans";
-    font-size: 0.9375rem;
+    font-family: "Fira",sans-serif,"PT Sans";
+    font-size: .9375rem;
     list-style: none;
 
     @media (max-width: 870px) {
@@ -56,12 +59,12 @@
     }
 }
 
-.tabs li:not(:last-child) {
-    margin-bottom: 8px;
-    @media (max-width: 870px) {
-        margin-bottom: 0;
-    }
-}
+// .tabs li:not(:last-child) {
+//     margin-bottom: 8px;
+//     @media (max-width: 870px) {
+//         margin-bottom: 0;
+//     }
+// }
 
 .tabs section {
     padding-top: 10px;
