@@ -90,19 +90,19 @@
       <div class="tabs">
         <ul>
           <li>
-            <a href="#section1">Общие</a>
+            <a class="item item--general" href="#section1">Общие</a>
           </li>
           <li>
-            <a href="#section2">Академические</a>
+            <a class="item item--current item--academ" href="#section2">Академические</a>
           </li>
           <li>
-            <a href="#section3">Стажировки</a>
+            <a class="item item--train" href="#section3">Стажировки</a>
           </li>
           <li>
-            <a href="#section4">Волонтёрство</a>
+            <a class="item item--volunteer" href="#section4">Волонтёрство</a>
           </li>
           <li>
-            <a href="#section5">Религиозные</a>
+            <a class="item item--religion" href="#section5">Религиозные</a>
           </li>
         </ul>
 
@@ -193,7 +193,9 @@
         newTab.removeAttribute('tabindex');
         // Set the selected state
         newTab.setAttribute('aria-selected', 'true');
+        newTab.classList.add('item--current');
         oldTab.removeAttribute('aria-selected');
+        oldTab.classList.remove('item--current');
         oldTab.setAttribute('tabindex', '-1');
         // Get the indices of the new and old tabs to find the correct
         // tab panels to show and hide
@@ -248,9 +250,9 @@
       });
 
       // Initially activate the first tab and reveal the first tab panel
-      tabs[0].removeAttribute('tabindex');
-      tabs[0].setAttribute('aria-selected', 'true');
-      panels[0].hidden = false;
+      tabs[1].removeAttribute('tabindex');
+      tabs[1].setAttribute('aria-selected', 'true');
+      panels[1].hidden = false;
     })();
   </script>
 

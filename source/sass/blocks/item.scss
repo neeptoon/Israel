@@ -1,0 +1,76 @@
+// стили для вкладок
+.item {
+    position: relative;
+    width: 228px;
+    margin: 0;
+    padding: 20px 41px 20px 72px;
+    font-weight: normal;
+
+    @media (max-width: 870px) {
+        width: max-content;
+        padding: 11px 12px 10px 52px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 25px;
+        width: 36px;
+        height: 36px;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    &--general {
+        &:after {
+            background-image: url("../img/noun_1240873_cc.png");
+        }
+    }
+    &--academ {
+        &:after {
+            background-image: url("../img/noun_582688_cc.png");
+        }
+    }
+    &--train {
+        &:after {
+            background-image: url("../img/noun_655316_cc.png");
+        }
+    }
+    &--volunteer {
+        &:after {
+            background-image: url("../img/noun_689837_cc.png");
+        }
+    }
+    &--religion {
+        &:after {
+            background-image: url("../img/noun_836000_cc.png");
+        }
+    }
+}
+
+// стили для активной вкладки
+.item--current {
+    color: $white;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    background-image: linear-gradient(-49deg, $white 10%, transparent 10%),linear-gradient(-131deg, $white 10%, transparent 10%),linear-gradient(154.39deg, $darken-yellow 20.46%, $yellow 65.31%);
+
+    &:focus {
+        outline: none;
+    }
+
+    @media (max-width: 870px) {
+        width: max-width;
+        width: max-content;
+        background-image: linear-gradient(154.39deg, $darken-yellow 20.46%, $yellow 65.31%);
+        border-radius: 80px;
+
+    }
+}
+
+
+
+
+
+

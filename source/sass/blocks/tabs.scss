@@ -67,44 +67,14 @@
     padding-top: 10px;
 }
 
-стили для панели с вкладками
-[role="tablist"] li {
+// стили для панели с вкладками
+.tabs li {
     display: flex;
 }
 
-// стили для вкладок
-[role="tablist"] a {
-    position: relative;
-    width: 228px;
-    margin: 0;
-    padding: 20px 41px 20px 72px;
-    font-weight: normal;
 
-    @media (max-width: 870px) {
-        width: max-content;
-        padding: 11px 12px 10px 52px;
-    }
-}
 
-// стили для активной вкладки
-[role="tablist"] [aria-selected] {
-    color: $white;
-    font-variant: small-caps;
-    text-transform: uppercase;
-    background-image: linear-gradient(-49deg, $white 10%, transparent 10%),linear-gradient(-131deg, $white 10%, transparent 10%),linear-gradient(154.39deg, $darken-yellow 20.46%, $yellow 65.31%);
 
-    &:focus {
-        outline: none;
-    }
-
-    @media (max-width: 870px) {
-        width: max-width;
-        width: max-content;
-        background-image: linear-gradient(154.39deg, $darken-yellow 20.46%, $yellow 65.31%);
-        border-radius: 80px;
-
-    }
-}
 
 // [role="tabpanel"] {
 //     padding: 1.5rem;
