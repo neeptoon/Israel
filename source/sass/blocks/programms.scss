@@ -5,11 +5,21 @@
     background-position: right 93px;
     background-size: 680px 426px;
 
+    @media (min-resolution: $retina-dpi),
+        (min-resolution: $retina-dppx) {
+        background-image: url("../img/programs-bg-desktop@2x.png");
+    }
+
     @media (max-width: 870px) {
         padding: 5px $mobilePadding;
         background-image: url("../img/programs-bg-mobile.png");
         background-position: right 128px;
         background-size: 320px 201px;
+
+        @media (min-resolution: $retina-dpi),
+            (min-resolution: $retina-dppx) {
+            background-image: url("../img/programs-bg-mobile@2x.png");
+        }
     }
 }
 
