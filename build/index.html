@@ -4,6 +4,11 @@
       const tablist = tabbed.querySelector('ul');
       const tabs = tablist.querySelectorAll('a');
       const panels = tabbed.querySelectorAll('[id^="section"]');
+      const RIGHT_ARROW_KEYCODE = 39;
+      const LEFT_ARROW_KEYCODE = 37;
+      const DOWN_ARROW_KEYCODE = 40;
+      const UP_ARROW_KEYCODE = 38;
+      const TABLET_WIDTH = 870;
 
       // The tab switching function
       const switchTab = (oldTab, newTab) => {
@@ -51,13 +56,24 @@
           let index = Array.prototype.indexOf.call(tabs, e.currentTarget);
           // Work out which key the user is pressing and
           // Calculate the new tab's index where appropriate
-          let dir = e.which === 38 ? index - 1 : e.which === 40 ? index + 1 : e.which === 39 ? 'right' : null;
-          if (dir !== null) {
-            e.preventDefault();
-            // If the down key is pressed, move focus to the open panel,
-            // otherwise switch to the adjacent tab
-            dir === 'right' ? panels[i].focus() : tabs[dir] ? switchTab(e.currentTarget, tabs[dir]) : void 0;
+          if (document.documentElement.clientWidth > TABLET_WIDTH) {
+            let dir = e.which === UP_ARROW_KEYCODE ? index - 1 : e.which === DOWN_ARROW_KEYCODE ? index + 1 : e.which === RIGHT_ARROW_KEYCODE ? 'right' : null;
+            if (dir !== null) {
+              e.preventDefault();
+              // If the down key is pressed, move focus to the open panel,
+              // otherwise switch to the adjacent tab
+              dir === 'right' ? panels[i].focus() : tabs[dir] ? switchTab(e.currentTarget, tabs[dir]) : void 0;
+            }
+          } else {
+            let dir = e.which === LEFT_ARROW_KEYCODE ? index - 1 : e.which === RIGHT_ARROW_KEYCODE ? index + 1 : e.which === DOWN_ARROW_KEYCODE ? 'down' : null;
+            if (dir !== null) {
+              e.preventDefault();
+              // If the down key is pressed, move focus to the open panel,
+              // otherwise switch to the adjacent tab
+              dir === 'down' ? panels[i].focus() : tabs[dir] ? switchTab(e.currentTarget, tabs[dir]) : void 0;
+            }
           }
+
         });
       });
 
