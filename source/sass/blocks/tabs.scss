@@ -38,11 +38,9 @@
     }
 }
 
-
-
 .tabs ul {
     display: grid;
-    grid-auto-rows: 70px;
+    grid-auto-rows: min-content;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -59,12 +57,6 @@
     }
 }
 
-// .tabs li:not(:last-child) {
-//     margin-bottom: 8px;
-//     @media (max-width: 870px) {
-//         margin-bottom: 0;
-//     }
-// }
 
 .tabs section {
     padding-top: 10px;
@@ -73,55 +65,6 @@
 // стили для панели с вкладками
 .tabs li {
     display: flex;
+    align-items: center;
+    min-height: 72px;
 }
-
-
-
-
-
-// [role="tabpanel"] {
-//     padding: 1.5rem;
-//     border: 2px solid;
-// }
-
-// [role="tabpanel"] * + * {
-//     margin-top: 0.75rem;
-// }
-
-
-@media (max-width: 870px) {
-
-
-
-
-
-
-
-
-
-    // [role="tablist"] li, [role="tablist"] a {
-    //     position: static;
-    //     display: block;
-    // }
-
-    // [role="tablist"] a {
-    //     border: 2px solid #222 !important;
-    // }
-
-    // [role="tablist"] li + li a {
-    //     border-top: 0 !important;
-    // }
-
-    // [role="tablist"] [aria-selected] {
-    //     position: static;
-    // }
-
-    // [role="tablist"] [aria-selected]::after {
-    //     content: '\0020⬅';
-    // }
-
-    // [role="tabpanel"] {
-    //     border-top: 0;
-    // }
-}
-

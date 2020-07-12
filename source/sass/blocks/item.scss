@@ -2,7 +2,7 @@
 .item {
     position: relative;
     width: min-content;
-    margin-left: 75px;
+    padding-left: 75px;
     font-weight: normal;
 
     &:hover {
@@ -48,7 +48,7 @@
 .item__pic {
     position: absolute;
     top: -7px;
-    left: -50px;
+    left: 25px;
 
     &--general {
         background-image: url("../img/noun_1240873_cc.png");
@@ -69,16 +69,60 @@
 
 // стили для активной вкладки
 .item--current {
-    width: 100%;
-    padding: 19px 14px 22px 70px;
+    position: relative;
+
     color: $white;
     font-variant: small-caps;
     text-transform: uppercase;
-    background-image: linear-gradient(-49deg, $white 10%, transparent 10%),linear-gradient(-131deg, $white 10%, transparent 10%),linear-gradient(154.39deg, $darken-yellow 20.46%, $yellow 65.31%);
 
-    &:focus {
-        outline: none;
+    .item__pic {
+        position: absolute;
+        top: -7px;
+        left: 25px;
+
+        &--general {
+            background-image: url("../img/1_w.png");
+        }
+        &--academ {
+            background-image: url("../img/noun_582688_cc-1.png");
+        }
+        &--train {
+            background-image: url("../img/3_w.png");
+        }
+        &--volunteer {
+            background-image: url("../img/4_w.png");
+        }
+        &--religion {
+            background-image: url("../img/5_w.png");
+        }
+
     }
+
+    &:hover {
+        color: $white;
+
+        .item__pic {
+
+
+            &--general {
+                background-image: url("../img/1_w.png");
+            }
+            &--academ {
+                background-image: url("../img/noun_582688_cc-1.png");
+            }
+            &--train {
+                background-image: url("../img/3_w.png");
+            }
+            &--volunteer {
+                background-image: url("../img/4_w.png");
+            }
+            &--religion {
+                background-image: url("../img/5_w.png");
+            }
+
+        }
+    }
+
 
     @media (max-width: 870px) {
         width: max-width;

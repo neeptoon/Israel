@@ -94,8 +94,8 @@
               <span class="item__pic item__pic--general"></span>
             </a>
           </li>
-          <li>
-            <a class="item" href="#section2">Академические
+          <li class="colored">
+            <a class="item item--current" href="#section2">Академические
               <span class="item__pic item__pic--academ"></span>
             </a>
           </li>
@@ -204,8 +204,10 @@
         // Set the selected state
         newTab.setAttribute('aria-selected', 'true');
         newTab.classList.add('item--current');
+        newTab.parentElement.classList.add('colored');
         oldTab.removeAttribute('aria-selected');
         oldTab.classList.remove('item--current');
+        oldTab.parentElement.classList.remove('colored');
         oldTab.setAttribute('tabindex', '-1');
         // Get the indices of the new and old tabs to find the correct
         // tab panels to show and hide
