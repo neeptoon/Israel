@@ -2,49 +2,68 @@
 .item {
     position: relative;
     width: min-content;
-    margin: 0;
-    padding: 0 0 0 77px;
+    margin-left: 75px;
     font-weight: normal;
+
+    &:hover {
+        color: transparent;
+        background-image: linear-gradient(132.19deg, $darken-yellow 20.46%, $yellow 65.31%);
+        background-clip: text;
+
+        .item__pic {
+            &--general {
+                background-image: url("../img/1_g.png");
+            }
+            &--academ {
+                background-image: url("../img/2_g.png");
+            }
+            &--train {
+                background-image: url("../img/3_g.png");
+            }
+            &--volunteer {
+                background-image: url("../img/4_g.png");
+            }
+            &--religion {
+                background-image: url("../img/5_g.png");
+            }
+        }
+    }
 
     @media (max-width: 870px) {
         width: max-content;
         padding: 11px 12px 10px 52px;
     }
+}
 
-    &::after {
-        content: "";
-        position: absolute;
-        left: 25px;
-        width: 36px;
-        height: 36px;
-        background-repeat: no-repeat;
-        background-position: center top;
-    }
+.item__pic {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+
+
+.item__pic {
+    position: absolute;
+    top: -7px;
+    left: -50px;
 
     &--general {
-        &:after {
-            background-image: url("../img/noun_1240873_cc.png");
-        }
+        background-image: url("../img/noun_1240873_cc.png");
     }
     &--academ {
-        &:after {
-            background-image: url("../img/noun_582688_cc.png");
-        }
+        background-image: url("../img/noun_582688_cc.png");
     }
     &--train {
-        &:after {
-            background-image: url("../img/noun_655316_cc.png");
-        }
+        background-image: url("../img/noun_655316_cc.png");
     }
     &--volunteer {
-        &:after {
-            background-image: url("../img/noun_689837_cc.png");
-        }
+        background-image: url("../img/noun_689837_cc.png");
     }
     &--religion {
-        &:after {
-            background-image: url("../img/noun_836000_cc.png");
-        }
+        background-image: url("../img/noun_836000_cc.png");
     }
 }
 
@@ -66,9 +85,9 @@
         width: max-content;
         background-image: linear-gradient(154.39deg, $darken-yellow 20.46%, $yellow 65.31%);
         border-radius: 80px;
-
     }
 }
+
 
 
 
