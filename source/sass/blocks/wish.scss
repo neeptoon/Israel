@@ -1,0 +1,29 @@
+.wish {
+    padding: 205px 15% 550px;
+    background-image: url(../img/wish-bg-desktop.png), url(../img/girl_flag-desktop.png);
+    background-repeat: no-repeat;
+    background-position: -8px 146px, right 0px;
+    background-size: 167px 226px, 60% auto;
+
+    @media (min-resolution: $retina-dpi),
+        (min-resolution: $retina-dppx) {
+        background-image: url(../img/wish-bg-desktop@2x.png), url(../img/girl_flag-desktop@2x.png);
+    }
+}
+
+.wish h2 {
+    margin-bottom: 17px;
+}
+
+.wish p {
+    width: 45%;
+    margin: 0 0 59px;
+    font-size: 1.0625rem;
+}
+
+.wish [type="text"] {
+    display: none;
+}
+
+
+

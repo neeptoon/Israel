@@ -29,13 +29,9 @@ a {
 }
 
 a:hover,
-button:hover {
-    cursor: pointer;
-}
-
-a:focus,
-button:focus {
+a:focus {
     outline: none;
+    cursor: pointer;
 }
 
 img {

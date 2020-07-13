@@ -182,7 +182,18 @@
             изучить все это в удивительной университетской среде.</p>
         </section>
       </div>
+    </section>
 
+    <section class="wish">
+      <h2 class="heading">Хочу поехать!</h2>
+      <p>Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
+      <form class="form" action="#" name="main-form" method="post">
+        <input type="text" placeholder="Имя">
+        <input type="tel" placeholder="Телефон" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          title="Используйте формат: +7 (123) 456-78-90">
+        <button class="button" type="submit">Перезвоните мне</button>
+
+      </form>
     </section>
 
 
@@ -264,7 +275,6 @@
               dir === 'down' ? panels[i].focus() : tabs[dir] ? switchTab(e.currentTarget, tabs[dir]) : void 0;
             }
           }
-
         });
       });
 

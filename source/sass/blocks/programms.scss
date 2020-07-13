@@ -1,5 +1,5 @@
 .programms {
-    padding: 115px 15%;
+    padding: 115px 15% 8px;
     background-image: url("../img/programs-bg-desktop.png");
     background-repeat: no-repeat;
     background-position: right 93px;
@@ -24,6 +24,7 @@
 }
 
 .programms h2 {
+    margin-bottom: 27px;
     @media (max-width: 870px) {
         width: max-content;
         margin: 0 auto;

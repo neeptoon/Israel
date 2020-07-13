@@ -1,10 +1,14 @@
 .button {
-  display: inline-block;
-
-  font: inherit;
-  text-align: center;
+    display: inline-block;
+    padding: 0;
+    font: inherit;
+    text-align: center;
+    background-color: transparent;
+    border: none;
 }
 
-button:hover {
-  cursor: pointer;
+.button:hover,
+.button:focus {
+    outline: none;
+    cursor: pointer;
 }
