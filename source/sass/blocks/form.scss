@@ -7,25 +7,42 @@
 }
 
 .form [type="tel"] {
+
     padding: 21px 47% 16px 41px;
     border: 2px solid $gray;
     border-radius: 35px;
     grid-column: 1/-1;
     grid-row: 1/2;
 
-    &:hover,
     &:focus {
         border: 2px solid $yellow;
         outline: none;
     }
 
-    &:invalid {
+    &:invalid:not(:placeholder-shown) {
         border-color: $red;
     }
 
     &:valid {
         border-color: $black;
     }
+
+    & + span {
+        position: relative;
+        &:before {
+            bottom: 10px;
+            left: 10px;
+        }
+    }
+
+    &:invalid:not(:placeholder-shown) + span:before {
+        content: "Ошибка: неверный формат";
+        padding-left: 35px;
+        color: $red;
+        font-size: 0.8265rem;
+    }
+
+
 }
 
 .form button {
