@@ -1,0 +1,55 @@
+.conditions {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: list;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 19px;
+        left: 4px;
+        width: 2px;
+        height: 85%;
+        border-left: 1px dashed $black;
+        opacity: 0.2;
+    }
+}
+
+.conditions li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.conditions span {
+    position: relative;
+    z-index: 3;
+    width: 36px;
+    height: 36px;
+    margin-left: -15px;
+    background-color: $white;
+    border: 1px solid $border-color-default;
+    border-radius: 50%;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+
+    &:before {
+        content: counter(list);
+        position: absolute;
+        top: 8%;
+        left: 40%;
+        color: $darken-yellow;
+        font-size: 1.0625rem;
+        counter-increment: list;
+    }
+}
+
+.conditions p {
+    margin: 0;
+    padding-left: 25px;
+}
+
+.conditions .notice {
+    width: 90%;
+}

@@ -1,0 +1,15 @@
+.notice {
+    position: relative;
+    padding-left: 3%;
+    opacity: 0.5;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background-color: $darken-yellow;
+    }
+}

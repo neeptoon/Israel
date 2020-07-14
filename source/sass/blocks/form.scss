@@ -1,6 +1,6 @@
 .form {
     display: grid;
-    width: 50%;
+    width: 477px;
     font-size: 1.0625rem;
     font-variant: small-caps;
     grid-template-columns: 1fr 45%;
@@ -50,6 +50,7 @@
     color: $white;
     font-family: inherit;
     font-variant: inherit;
+    text-transform: uppercase;
     background-image: linear-gradient(140.64deg, $darken-yellow 20.46%, $yellow 65.31%);
     border-radius: 80px;
     grid-column: 2/-1;
