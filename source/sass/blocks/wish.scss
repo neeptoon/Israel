@@ -3,22 +3,51 @@
     background-image: url(../img/wish-bg-desktop.png), url(../img/girl_flag-desktop.png);
     background-repeat: no-repeat;
     background-position: -8px 146px, right 0px;
-    background-size: 167px 226px, 60% auto;
+    background-size: 167px 226px, 100% auto;
 
     @media (min-resolution: $retina-dpi),
         (min-resolution: $retina-dppx) {
         background-image: url(../img/wish-bg-desktop@2x.png), url(../img/girl_flag-desktop@2x.png);
     }
+
+    @media (max-width: $tabletWidth) {
+        padding: 80px $tabletPadding 67%;
+        background-position: -8px 146px, center bottom
+    }
+
+    @media (max-width: 520px) {
+        padding: 80px $mobilePadding 311px;
+        background-image: url(../img/wish-bg-mobile.png), url(../img/girl-flag-mobile.png);
+        background-size: 120px 162px, 320px auto;
+
+        @media (min-resolution: $retina-dpi),
+            (min-resolution: $retina-dppx) {
+            background-image: url(../img/wish-bg-mobile@2x.png), url(../img/girl-flag-mobile@2x.png);
+        }
+    }
 }
 
 .wish h2 {
     margin-bottom: 17px;
+
+    @media (max-width: $tabletWidth) {
+        text-align: center;
+    }
 }
 
 .wish p {
     width: 45%;
     margin: 0 0 59px;
     font-size: 1.0625rem;
+
+    @media (max-width: $tabletWidth) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 520px) {
+        font-size: 1rem;
+    }
 }
 
 .wish [type="text"] {
