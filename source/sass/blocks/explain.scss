@@ -44,8 +44,9 @@
 
     @media (max-width: 768px) {
         padding: 70px $mobilePadding 20px;
-
-        background-image:  url('../img/explain-stamp-desktop.png');
+        background-image:  url('../img/explain-stamp-mobile.png');
+        background-position: 181% 351px;
+        background-size: 264px 199px;
 
         &:after {
             width: 0;
@@ -73,14 +74,28 @@
         width: 100%;
         font-size: 1rem;
     }
+
+    @media (max-width: 520px) {
+        margin: 0 0 20px;
+        font-size: 0.875rem;
+        line-height: 1.6;
+    }
 }
 
 .explain .bold {
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 30px;
+        font-size: 1rem;
+    }
 }
 
 .explain .notice {
     width: 90%;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 

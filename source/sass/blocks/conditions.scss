@@ -14,18 +14,31 @@
         height: 85%;
         border-left: 1px dashed $black;
         opacity: 0.2;
+
+        @media (max-width: 768px) {
+            left: 13px;
+        }
     }
+
+    @media (max-width: 768px) {
+        margin-bottom: 15px;
+    }
+
 }
 
 .conditions li {
     display: flex;
     align-items: center;
-    margin-bottom: 38px;
+}
+
+.conditions li:not(:last-child) {
+    margin-bottom: 40px;
 }
 
 .conditions span {
     position: relative;
     z-index: 3;
+    flex-shrink: 0;
     width: 36px;
     height: 36px;
     margin-left: -15px;
@@ -43,11 +56,19 @@
         font-size: 1.0625rem;
         counter-increment: list;
     }
+
+    @media (max-width: 768px) {
+        margin-left: -5px;
+    }
 }
 
 .conditions p {
     margin: 0;
     padding-left: 25px;
+
+    @media (max-width: 768px) {
+        padding-left: 13px;
+    }
 }
 
 .conditions .notice {
