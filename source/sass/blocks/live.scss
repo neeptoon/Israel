@@ -1,7 +1,16 @@
 .live {
+    width: 100%;
     margin-top: -160px;
     padding: 0 $padding-m;
     background-color: transparent;
+    background-image: url(../img/live-bg-desktop.png), url(../img/live-watch-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 0 -33px, right 630px;
+    background-size:  1366px 950px, 93px 148px;
+
+    @media (max-width: 1130px) {
+        background-image: none;
+    }
 }
 
 .live h2 {
@@ -19,4 +28,8 @@
     font-size: 1.0625rem;
     text-align: right;
     opacity: 0.87;
+
+    @media (max-width: 1130px) {
+        width: 90%;
+    }
 }
