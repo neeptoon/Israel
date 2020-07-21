@@ -1,0 +1,22 @@
+.live {
+    margin-top: -160px;
+    padding: 0 $padding-m;
+    background-color: transparent;
+}
+
+.live h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.live p {
+    width: 62%;
+    margin: 0 auto 45px;
+    color: $black;
+    font-family: "Fira Sans", sans-serif, "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.0625rem;
+    text-align: right;
+    opacity: 0.87;
+}

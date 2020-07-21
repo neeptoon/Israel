@@ -11,13 +11,13 @@
     border: none;
 
     &:after {
+        content: '';
         position: absolute;
         bottom: 12px;
         left: 0;
         width: 100%;
         height: 2px;
         border-bottom: 2px dashed $black;
-        content: '';
     }
 
     @media (max-width: $tabletWidth) {

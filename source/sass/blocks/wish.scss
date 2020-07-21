@@ -1,14 +1,20 @@
 .wish {
-    padding: 205px 15% 185px;
+    padding: 205px 15% 155px;
     background-image: url(../img/wish-bg-desktop.png), url(../img/girl_flag-desktop.png);
     background-repeat: no-repeat;
     background-position: -8px 146px, right 0px;
-    background-size: 167px 226px, 100% auto;
+    background-size: 167px 226px, 818px auto;
 
     @media (min-resolution: $retina-dpi),
         (min-resolution: $retina-dppx) {
         background-image: url(../img/wish-bg-desktop@2x.png), url(../img/girl_flag-desktop@2x.png);
     }
+
+    @media (max-width: 1241px) {
+        padding: 80px 5% 450px;
+        background-position: -8px 146px,center bottom;
+    }
+
 
     @media (max-width: $tabletWidth) {
         padding: 80px $tabletPadding 67%;
@@ -53,6 +59,3 @@
 .wish [type="text"] {
     display: none;
 }
-
-
-

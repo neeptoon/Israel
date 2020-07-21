@@ -1,17 +1,17 @@
 .page-wrapper {
-  padding-left: $mobilePadding;
-  padding-right: $mobilePadding;
-  margin: 0 auto;
-  overflow: hidden;
+    margin: 0 auto;
+    padding-right: $mobilePadding;
+    padding-left: $mobilePadding;
+    overflow: hidden;
 
-  @media (min-width: $tabletWidth) {
-    position: relative;
-    padding-left: $tabletPadding;
-    padding-right: $tabletPadding;
-  }
+    @media (min-width: $tabletWidth) {
+        position: relative;
+        padding-right: $tabletPadding;
+        padding-left: $tabletPadding;
+    }
 
-  @media (min-width: $desktopWidth) {
-    padding-left: $desktopPadding;
-    padding-right: $desktopPadding;
-  }
+    @media (min-width: $desktopWidth) {
+        padding-right: $desktopPadding;
+        padding-left: $desktopPadding;
+    }
 }

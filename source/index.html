@@ -1,330 +1,521 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css" />
-  <title>Маса</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Маса</title>
+  </head>
 
-<body class="page__body">
-  <!-- Вставка спрайта -->
-  <div style="display: none;">
-    <include src="build/img/sprite.svg"></include>
-  </div>
+  <body class="page__body">
+    <!-- Вставка спрайта -->
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
-  <header class="header">
-    <div class="header__logo logo">
-      <picture>
-        <source type="image/webp" media="(min-width: 768px)" srcset="
+    <header class="header">
+      <div class="header__logo logo">
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="
                               img/logo-desktop@2x.webp 2x,
                               img/logo-desktop.webp 1x
                             " />
-        <source media="(min-width: 768px)" srcset="
+          <source media="(min-width: 768px)" srcset="
                               img/logo-desktop@2x.png 2x,
                               img/logo-desktop.png 1x
                             " />
-        <source type="image/webp" srcset="
+          <source type="image/webp" srcset="
                               img/logo-mobile@2x.webp 2x,
                               img/logo-mobile.webp 1x
                             " />
-        <!-- 1х: 137px; 2x: 274px -->
-        <img src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x" alt="Логотип сайта" width="137" height="48" />
-      </picture>
-    </div>
+          <!-- 1х: 137px; 2x: 274px -->
+          <img src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x" alt="Логотип сайта" width="137"
+            height="48" />
+        </picture>
+      </div>
 
-    <a class="header__phone phone" href="tel:+(972)2–621–6581">+ (972) 2 – 621 – 6581</a>
+      <a class="header__phone phone" href="tel:+(972)2–621–6581">+ (972) 2 – 621 – 6581</a>
 
-    <button class="header__order order" type="button">заказать звонок</button>
-  </header>
+      <button class="header__order order" type="button">заказать звонок</button>
+    </header>
 
-  <main class="main">
-    <h1 class="visually-hidden">Организация стажировки студентов в Израиле</h1>
+    <main class="main">
+      <h1 class="visually-hidden">Организация стажировки студентов в Израиле</h1>
 
-    <section class="intro">
-      <h2 class="visually-hidden">Стижировка студентов в Израиле</h2>
+      <section class="intro">
+        <h2 class="visually-hidden">Стижировка студентов в Израиле</h2>
 
-      <span>Израиль</span>
+        <span>Израиль</span>
 
-      <p>Учёба, путешествие и карьера
-        для еврейской молодёжи</p>
-    </section>
+        <p>Учёба, путешествие и карьера
+          для еврейской молодёжи</p>
+      </section>
 
-    <section class="about">
-      <h2 class="heading">О программе</h2>
+      <section class="about">
+        <h2 class="heading">О программе</h2>
 
-      <p>«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60
-        на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до 8400$.
-      </p>
+        <p>«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ
+          (60
+          на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до
+          8400$.
+        </p>
 
-      <div>
-        <picture>
-          <source type="image/webp" media="(min-width: 768px)" srcset="
+        <div>
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="
                                 img/about-desktop@2x.webp 2x,
                                 img/about-desktop.webp 1x
                               " />
-          <source media="(min-width: 768px)" srcset="
+            <source media="(min-width: 768px)" srcset="
                                 img/about-desktop@2x.png 2x,
                                 img/about-desktop.png 1x
                               " />
-          <source type="image/webp" srcset="
+            <source type="image/webp" srcset="
                                 img/about-mobile@2x.webp 2x,
                                 img/about-mobile.webp 1x
                               " />
-          <!-- 1х: 870px; 2x: 1740px -->
-          <img src="img/about-mobile.png" srcset="img/about-mobile@2x.png 2x" alt="О программе" width="870"
-            height="460" />
-        </picture>
-        <button aria-label="Просмотр видео">
-          <svg width="15" height="19">
-            <use href="img/sprite.svg#icon-triangle"></use>
-          </svg>
-        </button>
-      </div>
-    </section>
+            <!-- 1х: 870px; 2x: 1740px -->
+            <img src="img/about-mobile.png" srcset="img/about-mobile@2x.png 2x" alt="О программе" width="870"
+              height="460" />
+          </picture>
+          <button aria-label="Просмотр видео">
+            <svg width="15" height="19">
+              <use href="img/sprite.svg#icon-triangle"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
 
-    <section class="programms">
-      <h2 class="heading">Программы</h2>
+      <section class="programms">
+        <h2 class="heading">Программы</h2>
 
-      <div class="tabs">
-        <ul>
+        <div class="tabs">
+          <ul>
+            <li>
+              <a class="item" href="#section1">Общие
+                <span class="item__pic item__pic--general"></span>
+              </a>
+            </li>
+            <li class="colored">
+              <a class="item item--current" href="#section2">Академические
+                <span class="item__pic item__pic--academ"></span>
+              </a>
+            </li>
+            <li>
+              <a class="item" href="#section3">Стажировки
+                <span class="item__pic item__pic--train"></span>
+              </a>
+            </li>
+            <li>
+              <a class="item" href="#section4">Волонтёрство
+                <span class="item__pic item__pic--volunteer"></span>
+              </a>
+            </li>
+            <li>
+              <a class="item" href="#section5">Религиозные
+                <span class="item__pic item__pic--religion"></span>
+              </a>
+            </li>
+          </ul>
+
+          <section id="section1">
+            <h3>Общие</h3>
+            <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем
+              жизни
+              —
+              вот что
+              такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
+              живая
+              лаборатория идей и творческого исследования.</p>
+            <p>
+              Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+              законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+              изучить все это в удивительной университетской среде.</p>
+          </section>
+          <section id="section2">
+            <h3>Академические</h3>
+            <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем
+              жизни
+              —
+              вот что
+              такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
+              живая
+              лаборатория идей и творческого исследования.</p>
+            <p>
+              Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+              законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+              изучить все это в удивительной университетской среде.</p>
+          </section>
+          <section id="section3">
+            <h3>Стажировки</h3>
+            <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем
+              жизни
+              —
+              вот что
+              такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
+              живая
+              лаборатория идей и творческого исследования.</p>
+            <p>
+              Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+              законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+              изучить все это в удивительной университетской среде.</p>
+          </section>
+          <section id="section4">
+            <h3>Волонтёрство</h3>
+            <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем
+              жизни
+              —
+              вот что
+              такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
+              живая
+              лаборатория идей и творческого исследования.</p>
+            <p>
+              Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+              законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+              изучить все это в удивительной университетской среде.</p>
+          </section>
+          <section id="section5">
+            <h3>Религиозные</h3>
+            <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем
+              жизни
+              —
+              вот что
+              такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
+              живая
+              лаборатория идей и творческого исследования.</p>
+            <p>
+              Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+              законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+              изучить все это в удивительной университетской среде.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="wish">
+        <h2 class="heading">Хочу поехать!</h2>
+        <p>Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
+        <form class="form" action="#" name="main-form" method="post">
+          <label class="visually-hidden" for="#name">Поле ввода имени</label>
+          <input type="text" placeholder="Имя" id="name">
+          <label class="visually-hidden" for="#phone">Поле ввода номера телефона</label>
+          <input id="phone" type="tel" placeholder="Телефон" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            title="Используйте формат: +7 (123) 456-78-90" required>
+          <span></span>
+          <button class="button" type="submit">Перезвоните мне</button>
+        </form>
+      </section>
+
+      <section class="explain">
+        <h2 class="heading">Как поехать</h2>
+        <p>Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы получите актуальные сведения
+          о
+          доступных программах и городах, в которых можете пройти программу.</p>
+        <p class="bold">Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:</p>
+        <ul class="conditions">
           <li>
-            <a class="item" href="#section1">Общие
-              <span class="item__pic item__pic--general"></span>
-            </a>
-          </li>
-          <li class="colored">
-            <a class="item item--current" href="#section2">Академические
-              <span class="item__pic item__pic--academ"></span>
-            </a>
+            <span></span>
+            <p>Быть в возрасте от 16 до 30 лет</p>
           </li>
           <li>
-            <a class="item" href="#section3">Стажировки
-              <span class="item__pic item__pic--train"></span>
-            </a>
+            <span></span>
+            <p>Иметь оконченное среднее образование</p>
           </li>
           <li>
-            <a class="item" href="#section4">Волонтёрство
-              <span class="item__pic item__pic--volunteer"></span>
-            </a>
+            <span></span>
+            <p>Иметь документально подтверждённые еврейские корни и пройти консульскую проверку</p>
           </li>
           <li>
-            <a class="item" href="#section5">Религиозные
-              <span class="item__pic item__pic--religion"></span>
-            </a>
+            <span></span>
+            <p>За последние 2 года быть не больше 3х месяцев подряд непрерывно в Израиле</p>
           </li>
         </ul>
 
-        <section id="section1">
-          <h3>Общие</h3>
-          <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни
-            —
-            вот что
-            такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
-            живая
-            лаборатория идей и творческого исследования.</p>
-          <p>
-            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
-            законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
-            изучить все это в удивительной университетской среде.</p>
-        </section>
-        <section id="section2">
-          <h3>Академические</h3>
-          <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни
-            —
-            вот что
-            такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
-            живая
-            лаборатория идей и творческого исследования.</p>
-          <p>
-            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
-            законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
-            изучить все это в удивительной университетской среде.</p>
-        </section>
-        <section id="section3">
-          <h3>Стажировки</h3>
-          <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни
-            —
-            вот что
-            такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
-            живая
-            лаборатория идей и творческого исследования.</p>
-          <p>
-            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
-            законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
-            изучить все это в удивительной университетской среде.</p>
-        </section>
-        <section id="section4">
-          <h3>Волонтёрство</h3>
-          <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни
-            —
-            вот что
-            такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
-            живая
-            лаборатория идей и творческого исследования.</p>
-          <p>
-            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
-            законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
-            изучить все это в удивительной университетской среде.</p>
-        </section>
-        <section id="section5">
-          <h3>Религиозные</h3>
-          <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни
-            —
-            вот что
-            такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
-            живая
-            лаборатория идей и творческого исследования.</p>
-          <p>
-            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
-            законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
-            изучить все это в удивительной университетской среде.</p>
-        </section>
-      </div>
-    </section>
+        <p class="notice">Если вы не подходите по этим правилам, вы всё равно можете
+          принять участие в программе «Маса», оплатив её полную стоимость.</p>
+      </section>
 
-    <section class="wish">
-      <h2 class="heading">Хочу поехать!</h2>
-      <p>Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
-      <form class="form" action="#" name="main-form" method="post">
-        <label class="visually-hidden" for="#name">Поле ввода имени</label>
-        <input type="text" placeholder="Имя" id="name">
-        <label class="visually-hidden" for="#phone">Поле ввода номера телефона</label>
-        <input id="phone" type="tel" placeholder="Телефон" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-          title="Используйте формат: +7 (123) 456-78-90" required>
-        <span></span>
-        <button class="button" type="submit">Перезвоните мне</button>
-      </form>
-    </section>
+      <section class="live">
 
-    <section class="explain">
-      <h2 class="heading">Как поехать</h2>
-      <p>Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы получите актуальные сведения о
-        доступных программах и городах, в которых можете пройти программу.</p>
-      <p class="bold">Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:</p>
-      <ul class="conditions">
-        <li>
-          <span></span>
-          <p>Быть в возрасте от 16 до 30 лет</p>
-        </li>
-        <li>
-          <span></span>
-          <p>Иметь оконченное среднее образование</p>
-        </li>
-        <li>
-          <span></span>
-          <p>Иметь документально подтверждённые еврейские корни и пройти консульскую проверку</p>
-        </li>
-        <li>
-          <span></span>
-          <p>За последние 2 года быть не больше 3х месяцев подряд непрерывно в Израиле</p>
-        </li>
-      </ul>
+        <h2 class="heading">Жизнь в Израиле</h2>
+        <p>Помимо учёбы, в рамках программе у вас будет возможность путешествовать по стране и познакомиться с богатой
+          культурно-исторической жизнью Израиля и его жителей.</p>
 
-      <p class="notice">Если вы не подходите по этим правилам, вы всё равно можете
-        принять участие в программе «Маса», оплатив её полную стоимость.</p>
-    </section>
+        <div class="pictures">
+          <div class="pictures--first-wrapper">
+            <!-- фото 1 -->
+            <div class="pictures__thing pictures__thing--transform">
+              <picture>
+                <source type="image/webp" media="(min-width: 482px)" srcset="
+                                      img/live1-desktop@2x.webp 2x,
+                                      img/live1-desktop.webp 1x" />
+                <!-- 1х: 482px; 2x: 964px -->
+                <img src="img/live1-desktop@2x.png" srcset="img/live1-desktop@2x.png 2x"
+                  alt="Экскурсии по Израилю и знакомство с его историей" width="482" height="732" />
+              </picture>
+              <p>Экскурсии по Израилю и знакомство с его историей</p>
+            </div>
+          </div>
 
 
-  </main>
+          <div class="pictures--first-wrapper">
+            <div class="pictures--second-wrapper">
+              <!-- фото 2 -->
+              <div class="pictures__thing">
+                <picture>
+                  <source type="image/webp" media="(min-width: 482px)" srcset="
+                                            img/live2-desktop@2x.webp 2x,
+                                            img/live2-desktop.webp 1x
+                                          " />
+                  <!-- 1х: 211px; 2x: 422px -->
+                  <img src="img/live2-desktop.png" srcset="img/live2-desktop@2x.png 2x" alt="Изучение иврита" width="211"
+                    height="318" />
+                </picture>
+                <p>Изучение иврита</p>
+              </div>
 
-  <script>
-    (function () {
-      // Get relevant elements and collections
-      const tabbed = document.querySelector('.programms');
-      const tablist = tabbed.querySelector('ul');
-      const tabs = tablist.querySelectorAll('a');
-      const panels = tabbed.querySelectorAll('[id^="section"]');
-      const RIGHT_ARROW_KEYCODE = 39;
-      const LEFT_ARROW_KEYCODE = 37;
-      const DOWN_ARROW_KEYCODE = 40;
-      const UP_ARROW_KEYCODE = 38;
-      const TABLET_WIDTH = 870;
+              <!-- фото 3 -->
+              <div class="pictures__thing">
+                <picture>
+                  <source type="image/webp" media="(min-width: 482px)" srcset="
+                                            img/live3-desktop@2x.webp 2x,
+                                            img/live3-desktop.webp 1x
+                                          " />
+                  <!-- 1х: 411px; 2x: 822px -->
+                  <img src="img/live3-desktop.png" srcset="img/live3-desktop@2x.png 2x"
+                    alt="Обучение современным навыкам и профессиям" width="411" height="822" />
+                </picture>
+                <p>Обучение современным навыкам и профессиям</p>
+              </div>
+            </div>
 
-      // The tab switching function
-      const switchTab = (oldTab, newTab) => {
-        newTab.focus();
-        // Make the active tab focusable by the user (Tab key)
-        newTab.removeAttribute('tabindex');
-        // Set the selected state
-        newTab.setAttribute('aria-selected', 'true');
-        newTab.classList.add('item--current');
-        newTab.parentElement.classList.add('colored');
-        oldTab.removeAttribute('aria-selected');
-        oldTab.classList.remove('item--current');
-        oldTab.parentElement.classList.remove('colored');
-        oldTab.setAttribute('tabindex', '-1');
-        // Get the indices of the new and old tabs to find the correct
-        // tab panels to show and hide
-        let index = Array.prototype.indexOf.call(tabs, newTab);
-        let oldIndex = Array.prototype.indexOf.call(tabs, oldTab);
-        panels[oldIndex].hidden = true;
-        panels[index].hidden = false;
-      }
+            <div class="pictures--second-wrapper">
+              <!-- фото 4 -->
+              <div class="pictures__thing">
+                <picture>
+                  <source type="image/webp" media="(min-width: 482px)" srcset="
+                                            img/live4-desktop@2x.webp 2x,
+                                            img/live4-desktop.webp 1x
+                                          " />
+                  <!-- 1х: 411px; 2x: 822px -->
+                  <img src="img/live4-desktop.png" srcset="img/live4-desktop@2x.png 2x" alt="Совместные творческие проекты
+                             с израильской молодёжью" width="411" height="318" />
+                </picture>
+                <p>Совместные творческие проекты с израильской молодёжью</p>
+              </div>
 
-      // Add the tablist role to the first <ul> in the .tabbed container
-      tablist.setAttribute('role', 'tablist');
+              <!-- фото 5 -->
+              <div class="pictures__thing">
+                <picture>
+                  <source type="image/webp" media="(min-width: 482px)" srcset="
+                                            img/live5-desktop@2x.webp 2x,
+                                            img/live5-desktop.webp 1x
+                                          " />
+                  <!-- 1х: 211px; 2x: 422px -->
+                  <img src="img/live5-desktop.png" srcset="img/live5-desktop@2x.png 2x" alt="Развитие лидерства" width="211"
+                    height="318" />
+                </picture>
+                <p>Развитие лидерства</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      // Add semantics are remove user focusability for each tab
-      Array.prototype.forEach.call(tabs, (tab, i) => {
-        tab.setAttribute('role', 'tab');
-        tab.setAttribute('id', 'tab' + (i + 1));
-        tab.setAttribute('tabindex', '-1');
-        tab.parentNode.setAttribute('role', 'presentation');
 
-        // Handle clicking of tabs for mouse users
-        tab.addEventListener('click', e => {
-          e.preventDefault();
-          let currentTab = tablist.querySelector('[aria-selected]');
-          if (e.currentTarget !== currentTab) {
-            switchTab(currentTab, e.currentTarget);
-          }
+
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+
+            <!-- Slides -->
+            <!-- фото 1 -->
+            <div class="swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="
+                                  img/live1-mobile@2x.webp 2x,
+                                  img/live1-mobile.webp 1x
+                                " />
+                <!-- 1х: 482px; 2x: 964px -->
+                <img src="img/live1-mobile.png" srcset="img/live1-mobile@2x.png 2x"
+                  alt="Экскурсии по Израилю и знакомство с его историей" width="482" height="732" />
+              </picture>
+              <p>Экскурсии по Израилю и знакомство с его историей</p>
+            </div>
+
+            <!-- фото 2 -->
+            <div class="swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="
+                                      img/live2-mobile@2x.webp 2x,
+                                      img/live2-mobile.webp 1x
+                                    " />
+                <!-- 1х: 211px; 2x: 422px -->
+                <img src="img/live2-mobile.png" srcset="img/live2-mobile@2x.png 2x" alt="Изучение иврита" width="211"
+                  height="318" />
+              </picture>
+              <p>Изучение иврита</p>
+            </div>
+
+            <!-- фото 3 -->
+            <div class="swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="
+                                      img/live3-mobile@2x.webp 2x,
+                                      img/live3-mobile.webp 1x
+                                    " />
+                <!-- 1х: 411px; 2x: 822px -->
+                <img src="img/live3-mobile.png" srcset="img/live3-mobile@2x.png 2x"
+                  alt="Обучение современным навыкам и профессиям" width="411" height="822" />
+              </picture>
+              <p>Обучение современным навыкам и профессиям</p>
+            </div>
+
+            <!-- фото 4 -->
+            <div class="swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="
+                                      img/live4-mobile@2x.webp 2x,
+                                      img/live4-mobile.webp 1x
+                                    " />
+                <!-- 1х: 411px; 2x: 822px -->
+                <img src="img/live4-mobile.png" srcset="img/live4-mobile@2x.png 2x" alt="Совместные творческие проекты
+                       с израильской молодёжью" width="411" height="318" />
+              </picture>
+              <p>Совместные творческие проекты с израильской молодёжью</p>
+            </div>
+
+            <!-- фото 5 -->
+            <div class="swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="
+                                      img/live5-mobile@2x.webp 2x,
+                                      img/live5-mobile.webp 1x
+                                    " />
+                <!-- 1х: 211px; 2x: 422px -->
+                <img src="img/live5-mobile.png" srcset="img/live5-mobile@2x.png 2x" alt="Развитие лидерства" width="211"
+                  height="318" />
+              </picture>
+              <p>Развитие лидерства</p>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <script>
+      (function () {
+        // Get relevant elements and collections
+        const tabbed = document.querySelector('.programms');
+        const tablist = tabbed.querySelector('ul');
+        const tabs = tablist.querySelectorAll('a');
+        const panels = tabbed.querySelectorAll('[id^="section"]');
+        const RIGHT_ARROW_KEYCODE = 39;
+        const LEFT_ARROW_KEYCODE = 37;
+        const DOWN_ARROW_KEYCODE = 40;
+        const UP_ARROW_KEYCODE = 38;
+        const TABLET_WIDTH = 870;
+
+        // The tab switching function
+        const switchTab = (oldTab, newTab) => {
+          newTab.focus();
+          // Make the active tab focusable by the user (Tab key)
+          newTab.removeAttribute('tabindex');
+          // Set the selected state
+          newTab.setAttribute('aria-selected', 'true');
+          newTab.classList.add('item--current');
+          newTab.parentElement.classList.add('colored');
+          oldTab.removeAttribute('aria-selected');
+          oldTab.classList.remove('item--current');
+          oldTab.parentElement.classList.remove('colored');
+          oldTab.setAttribute('tabindex', '-1');
+          // Get the indices of the new and old tabs to find the correct
+          // tab panels to show and hide
+          let index = Array.prototype.indexOf.call(tabs, newTab);
+          let oldIndex = Array.prototype.indexOf.call(tabs, oldTab);
+          panels[oldIndex].hidden = true;
+          panels[index].hidden = false;
+        }
+
+        // Add the tablist role to the first <ul> in the .tabbed container
+        tablist.setAttribute('role', 'tablist');
+
+        // Add semantics are remove user focusability for each tab
+        Array.prototype.forEach.call(tabs, (tab, i) => {
+          tab.setAttribute('role', 'tab');
+          tab.setAttribute('id', 'tab' + (i + 1));
+          tab.setAttribute('tabindex', '-1');
+          tab.parentNode.setAttribute('role', 'presentation');
+
+          // Handle clicking of tabs for mouse users
+          tab.addEventListener('click', e => {
+            e.preventDefault();
+            let currentTab = tablist.querySelector('[aria-selected]');
+            if (e.currentTarget !== currentTab) {
+              switchTab(currentTab, e.currentTarget);
+            }
+          });
+
+          // Handle keydown events for keyboard users
+          tab.addEventListener('keydown', e => {
+            // Get the index of the current tab in the tabs node list
+            let index = Array.prototype.indexOf.call(tabs, e.currentTarget);
+            // Work out which key the user is pressing and
+            // Calculate the new tab's index where appropriate
+            if (document.documentElement.clientWidth > TABLET_WIDTH) {
+              let dir = e.which === UP_ARROW_KEYCODE ? index - 1 : e.which === DOWN_ARROW_KEYCODE ? index + 1 : e.which === RIGHT_ARROW_KEYCODE ? 'right' : null;
+              if (dir !== null) {
+                e.preventDefault();
+                // If the down key is pressed, move focus to the open panel,
+                // otherwise switch to the adjacent tab
+                dir === 'right' ? panels[i].focus() : tabs[dir] ? switchTab(e.currentTarget, tabs[dir]) : void 0;
+              }
+            } else {
+              let dir = e.which === LEFT_ARROW_KEYCODE ? index - 1 : e.which === RIGHT_ARROW_KEYCODE ? index + 1 : e.which === DOWN_ARROW_KEYCODE ? 'down' : null;
+              if (dir !== null) {
+                e.preventDefault();
+                // If the down key is pressed, move focus to the open panel,
+                // otherwise switch to the adjacent tab
+                dir === 'down' ? panels[i].focus() : tabs[dir] ? switchTab(e.currentTarget, tabs[dir]) : void 0;
+              }
+            }
+          });
         });
 
-        // Handle keydown events for keyboard users
-        tab.addEventListener('keydown', e => {
-          // Get the index of the current tab in the tabs node list
-          let index = Array.prototype.indexOf.call(tabs, e.currentTarget);
-          // Work out which key the user is pressing and
-          // Calculate the new tab's index where appropriate
-          if (document.documentElement.clientWidth > TABLET_WIDTH) {
-            let dir = e.which === UP_ARROW_KEYCODE ? index - 1 : e.which === DOWN_ARROW_KEYCODE ? index + 1 : e.which === RIGHT_ARROW_KEYCODE ? 'right' : null;
-            if (dir !== null) {
-              e.preventDefault();
-              // If the down key is pressed, move focus to the open panel,
-              // otherwise switch to the adjacent tab
-              dir === 'right' ? panels[i].focus() : tabs[dir] ? switchTab(e.currentTarget, tabs[dir]) : void 0;
-            }
-          } else {
-            let dir = e.which === LEFT_ARROW_KEYCODE ? index - 1 : e.which === RIGHT_ARROW_KEYCODE ? index + 1 : e.which === DOWN_ARROW_KEYCODE ? 'down' : null;
-            if (dir !== null) {
-              e.preventDefault();
-              // If the down key is pressed, move focus to the open panel,
-              // otherwise switch to the adjacent tab
-              dir === 'down' ? panels[i].focus() : tabs[dir] ? switchTab(e.currentTarget, tabs[dir]) : void 0;
-            }
-          }
+        // Add tab panel semantics and hide them all
+        Array.prototype.forEach.call(panels, (panel, i) => {
+          panel.setAttribute('role', 'tabpanel');
+          panel.setAttribute('tabindex', '-1');
+          let id = panel.getAttribute('id');
+          panel.setAttribute('aria-labelledby', tabs[i].id);
+          panel.hidden = true;
         });
+
+        // Initially activate the first tab and reveal the first tab panel
+        tabs[1].removeAttribute('tabindex');
+        tabs[1].setAttribute('aria-selected', 'true');
+        panels[1].hidden = false;
+      })();
+    </script>
+
+    <script type="module">
+      import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js';
+
+      const swiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        }
       });
+    </script>
 
-      // Add tab panel semantics and hide them all
-      Array.prototype.forEach.call(panels, (panel, i) => {
-        panel.setAttribute('role', 'tabpanel');
-        panel.setAttribute('tabindex', '-1');
-        let id = panel.getAttribute('id');
-        panel.setAttribute('aria-labelledby', tabs[i].id);
-        panel.hidden = true;
-      });
-
-      // Initially activate the first tab and reveal the first tab panel
-      tabs[1].removeAttribute('tabindex');
-      tabs[1].setAttribute('aria-selected', 'true');
-      panels[1].hidden = false;
-    })();
-  </script>
-
-
-</body>
+  </body>
 
 </html>
