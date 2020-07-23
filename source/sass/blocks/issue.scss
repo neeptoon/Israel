@@ -26,12 +26,28 @@
     text-align: left;
     background: none;
     border: none;
+
+    @media (max-width: $tabletWidth) {
+        width: 97%;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    &:hover,
+    &:focus {
+        outline: 0;
+        opacity: 0.6;
+    }
 }
 
 .issue svg {
     position: absolute;
     top: 17px;
     right: 37px;
+
+    @media (max-width: $tabletWidth) {
+        right: 0;
+    }
 }
 
 .issue + div {
@@ -42,4 +58,13 @@
     line-height: 1.5;
     text-align: left;
     opacity: .74;
+
+    @media (max-width: $tabletWidth) {
+        margin-top: -22px;
+        font-size: 0.875rem;
+    }
+}
+
+[aria-expanded="true"] svg {
+    transform: rotate(180deg);
 }
