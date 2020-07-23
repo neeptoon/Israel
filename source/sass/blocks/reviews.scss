@@ -1,5 +1,9 @@
 .reviews {
     padding: 0 103px;
+    background-image: url(../img/comments-bg-desktop.png), url(../img/reviews-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: right 70px;
+    background-size: 1259px 527px, 535px 318px;
 }
 
 .reviews h2 {
@@ -26,7 +30,10 @@
 }
 
 .reviews__author-image {
+    width: 100%;
     mask-image: url(../img/mask-comment.png);
+    mask-size: 100%;
+    mask-repeat: no-repeat;
 }
 
 .reviews__author-name {
@@ -61,6 +68,16 @@
     font-size: 1.0625rem;
     opacity: 0.74;
     grid-area: content;
+}
+
+.reviews__text button {
+    padding: 0;
+    color: $blue;
+    font-size: 1.0625rem;
+    background: transparent;
+    border: none;
+    text-decoration-line: underline;
+
 }
 
 .reviews__text p {
