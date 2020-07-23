@@ -1,0 +1,21 @@
+.socials {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 82px;
+}
+
+.socials__link {
+    width: 22px;
+    height: 22px;
+
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+
+
+.socials__icon {
+    opacity: 0.74;
+    fill: $black;
+}

@@ -1,0 +1,79 @@
+.reviews {
+    padding: 0 103px;
+}
+
+.reviews h2 {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.reviews__item {
+    display: grid;
+    grid-template-areas:
+        "photo name"
+        "photo desc"
+        "photo content"
+        "photo socials";
+    margin: 0;
+    padding: 0;
+    column-gap: 4%;
+    grid-auto-rows: max-content;
+}
+
+.reviews__author-picture {
+    grid-area: photo;
+    margin: 0;
+}
+
+.reviews__author-image {
+    mask-image: url(../img/mask-comment.png);
+}
+
+.reviews__author-name {
+
+    align-self: end;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    grid-area: name;
+}
+
+.reviews__intro {
+    grid-area: desc;
+    display: flex;
+    font-size: 0.9375rem;
+}
+
+.reviews__desc {
+    margin: 0;
+    margin-right: 7px;
+    color: $blue;
+}
+
+.reviews__programm {
+    margin: 0;
+    color: $black;
+    opacity: 0.74;
+}
+
+.reviews__text {
+    color: $black;
+    font-size: 1.0625rem;
+    opacity: 0.74;
+    grid-area: content;
+}
+
+.reviews__text p {
+    width: 89%;
+    margin: 0;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.reviews__author-socials {
+    grid-area: socials;
+    align-self: end;
+    justify-self: end;
+}
